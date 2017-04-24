@@ -371,10 +371,12 @@ body {
 
 .container {
   margin: auto;
-  width: 50em; }
+  width: 800px; }
+  .container img {
+    max-width: 100%; }
 
 .section {
-  margin-bottom: 5rem; }
+  margin-bottom: 8rem; }
 
 #prefix {
   text-align: right;
@@ -388,20 +390,27 @@ body {
   box-shadow: 0 5px 5px gainsboro;
   text-shadow: 0 -2px 2px gainsboro; }
   #hero h1 {
-    font-size: 8em;
-    margin: 0; }
+    font-size: 8.35em;
+    margin: 0 0 0 -5px;
+    text-align: justify; }
   #hero h2 {
-    font-size: 4em;
+    font-size: 3.35em;
     margin: 0; }
 
 article header > img {
   max-width: 100%;
   box-shadow: 0 5px 5px gainsboro; }
-article h1 {
+article h1, article h3 {
   margin: 10px 0 0;
   font-size: 1.5rem;
   text-shadow: 0 -2px 2px gainsboro; }
 article p:first-of-type {
   margin-top: 0; }
+article p {
+  margin-top: 1rem; }
+  article p > img {
+    margin-top: 1rem; }
+article p + h3 {
+  margin-top: -1rem; }
 
 /*# sourceMappingURL=main.css.map */

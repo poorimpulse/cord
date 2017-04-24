@@ -32,12 +32,14 @@ body {
 
 .container {
   margin: auto;
-  width: 50em;
+  width: 800px;
   //border: 1px solid $neutral;
+
+  img { max-width: 100%; }
 }
 
 .section {
-  margin-bottom: 5rem;
+  margin-bottom: 8rem;
 }
 
 #prefix {
@@ -55,13 +57,14 @@ body {
   text-shadow: 0 -2px 2px $shadow;
 
   h1 {
-    font-size: 8em;
-    margin: 0;
+    font-size: 8.35em;
+    margin: 0 0 0 -5px;
+    text-align: justify;
 
   }
 
   h2 {
-    font-size: 4em;
+    font-size: 3.35em;
     margin: 0;
   }
 }
@@ -72,7 +75,7 @@ article {
     box-shadow: 0 5px 5px $shadow;
   }
 
-  h1 {
+  h1, h3 {
     margin: 10px 0 0;
     font-size: 1.5rem;
     text-shadow: 0 -2px 2px $shadow;
@@ -80,5 +83,17 @@ article {
 
   p:first-of-type {
     margin-top: 0;
+  }
+
+  p {
+    margin-top: 1rem;
+
+    & > img {
+      margin-top: 1rem;
+    }
+  }
+
+  p + h3 {
+    margin-top: -1rem;
   }
 }
