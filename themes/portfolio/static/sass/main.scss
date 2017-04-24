@@ -15,6 +15,18 @@ body {
   background: $white;
 }
 
+a {
+  color: $color1;
+
+  &:hover {
+    color: $black;
+  }
+}
+
+.spacer {
+  padding: 0 1em;
+}
+
 .block {
   display: inline-block;
   width: 1em; height: 1em;

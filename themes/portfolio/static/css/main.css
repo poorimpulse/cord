@@ -356,6 +356,14 @@ th {
 body {
   background: #f6f6f6; }
 
+a {
+  color: #91765b; }
+  a:hover {
+    color: black; }
+
+.spacer {
+  padding: 0 1em; }
+
 .block {
   display: inline-block;
   width: 1em;
