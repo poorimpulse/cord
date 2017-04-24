@@ -1,0 +1,84 @@
+@import "normalize";
+
+$basecolor1: #987654;
+//$basecolor1: #ff6789;
+$basecolor2: adjust_hue($basecolor1, 180);
+
+$color1: mix($basecolor1, $basecolor2, 90%);
+$color2: mix($basecolor1, $basecolor2, 10%);
+$neutral: mix($basecolor1, $basecolor2, 50%);
+$white: lighten($neutral, 50%);
+$shadow: darken($white, 10%);
+$black: darken($neutral, 50%);
+
+body {
+  background: $white;
+}
+
+.block {
+  display: inline-block;
+  width: 1em; height: 1em;
+  border: 1px solid $black;
+  background-color: $neutral;
+}
+
+.color1 {
+  background-color: $color1;
+}
+
+.color2 {
+  background-color: $color2;
+}
+
+.container {
+  margin: auto;
+  width: 50em;
+  //border: 1px solid $neutral;
+}
+
+.section {
+  margin-bottom: 5rem;
+}
+
+#prefix {
+  text-align: right;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+#hero {
+  background: $color2;
+  color: $white;
+  padding: 1em;
+
+  box-shadow: 0 5px 5px $shadow;
+  text-shadow: 0 -2px 2px $shadow;
+
+  h1 {
+    font-size: 8em;
+    margin: 0;
+
+  }
+
+  h2 {
+    font-size: 4em;
+    margin: 0;
+  }
+}
+
+article {
+  header > img {
+    max-width: 100%;
+    box-shadow: 0 5px 5px $shadow;
+  }
+
+  h1 {
+    margin: 10px 0 0;
+    font-size: 1.5rem;
+    text-shadow: 0 -2px 2px $shadow;
+  }
+
+  p:first-of-type {
+    margin-top: 0;
+  }
+}

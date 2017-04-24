@@ -1,0 +1,7 @@
+{{ partial "header.html" . }}
+{{ with .Site.GetPage "section" "project" }}
+    {{ range .Pages}}
+        {{ .Render "_summary" }}
+    {{ end }}
+{{ end }}
+{{ partial "footer.html" . }}

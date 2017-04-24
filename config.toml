@@ -1,0 +1,4 @@
+baseURL = "https://cordcarney.com/"
+languageCode = "en-us"
+title = "Cord Carney"
+theme = "portfolio"
