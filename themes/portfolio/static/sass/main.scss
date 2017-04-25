@@ -13,6 +13,7 @@ $black: darken($neutral, 50%);
 
 body {
   background: $white;
+  padding-bottom: 3rem;
 }
 
 a {
@@ -51,7 +52,7 @@ a {
 }
 
 .section {
-  margin-bottom: 8rem;
+
 }
 
 #prefix {
@@ -64,6 +65,7 @@ a {
   background: $color2;
   color: $white;
   padding: 1em;
+  margin-bottom: 8rem;
 
   box-shadow: 0 5px 5px $shadow;
   text-shadow: 0 -2px 2px $shadow;
@@ -107,5 +109,12 @@ article {
 
   p + h3 {
     margin-top: -1rem;
+    text-align: right;
   }
+}
+
+article + hr {
+  margin: 4rem auto;
+  width: 5rem;
+  color: $color2;
 }

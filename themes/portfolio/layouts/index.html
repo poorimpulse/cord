@@ -1,7 +1,10 @@
 {{ partial "header.html" . }}
 {{ with .Site.GetPage "section" "project" }}
-    {{ range .Pages}}
-        {{ .Render "_summary" }}
+    {{ range $idx, $project := .Pages}}
+        {{ if gt $idx 0 }}
+        <hr />
+        {{ end }}
+        {{ $project.Render "_summary" }}
     {{ end }}
 {{ end }}
 {{ partial "footer.html" . }}

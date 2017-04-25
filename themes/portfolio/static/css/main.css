@@ -354,7 +354,8 @@ th {
   padding: 0; }
 
 body {
-  background: #f6f6f6; }
+  background: #f6f6f6;
+  padding-bottom: 3rem; }
 
 a {
   color: #91765b; }
@@ -383,9 +384,6 @@ a {
   .container img {
     max-width: 100%; }
 
-.section {
-  margin-bottom: 8rem; }
-
 #prefix {
   text-align: right;
   margin-top: 1em;
@@ -395,6 +393,7 @@ a {
   background: #5b7691;
   color: #f6f6f6;
   padding: 1em;
+  margin-bottom: 8rem;
   box-shadow: 0 5px 5px gainsboro;
   text-shadow: 0 -2px 2px gainsboro; }
   #hero h1 {
@@ -419,6 +418,12 @@ article p {
   article p > img {
     margin-top: 1rem; }
 article p + h3 {
-  margin-top: -1rem; }
+  margin-top: -1rem;
+  text-align: right; }
+
+article + hr {
+  margin: 4rem auto;
+  width: 5rem;
+  color: #5b7691; }
 
 /*# sourceMappingURL=main.css.map */
